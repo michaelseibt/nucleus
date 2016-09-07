@@ -7,3 +7,6 @@ before_script:
   - npm install -g gulp
   - npm run build
   - npm run build_docs
+
+after_success:
+  - bash deploy.sh
